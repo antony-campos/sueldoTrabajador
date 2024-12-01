@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultado Empleado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="max-width: 500px; margin-top: 50px;">
+        <h2 class="text-center mb-4">Resultado de Empleado</h2>
+        <div class="list-group">
+            <div class="list-group-item"><strong>Nombre:</strong> <span th:text="${empleado.nombre}"></span></div>
+            <div class="list-group-item"><strong>Sueldo Base:</strong> <span th:text="${empleado.sueldoBase}"></span></div>
+            <div class="list-group-item"><strong>Horas Extra:</strong> <span th:text="${empleado.horasExtra}"></span></div>
+            <div class="list-group-item"><strong>Sueldo Total:</strong> <span th:text="${empleado.sueldoTotal}"></span></div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+</body>
+</html>
